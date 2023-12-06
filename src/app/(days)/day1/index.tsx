@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { Stack } from "expo-router";
 
 const DayDetailsScreen = () => {
   return (
     <View>
-      <Text>DayDetailsScreen</Text>
+      <Stack.Screen options={{ title: "Day 1" }} />
+      <Text style={{ fontFamily: "AmaticBold" }}>DayDetailsScreen</Text>
     </View>
   );
 };
