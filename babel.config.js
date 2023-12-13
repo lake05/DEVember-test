@@ -1,20 +1,7 @@
 module.exports = function (api) {
   api.cache(true)
-  const disableImportExportTransform = true
   return {
-    presets: [
-      [
-        'babel-preset-expo',
-        {
-          native: {
-            disableImportExportTransform,
-          },
-          web: {
-            disableImportExportTransform,
-          },
-        },
-      ],
-    ],
+    presets: ['babel-preset-expo'],
     plugins: [
       'expo-router/babel',
       '@babel/plugin-proposal-export-namespace-from',

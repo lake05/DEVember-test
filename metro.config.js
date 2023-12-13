@@ -8,10 +8,10 @@ const config = getDefaultConfig(__dirname)
 // config.resolver.assetExts = [...config.resolver.assetExts, 'lottie']
 
 // Tree shaking by platform
-config.transformer.getTransformOptions = async () => ({
-  transform: {
-    experimentalImportSupport: true,
-  },
-})
+// config.transformer.getTransformOptions = async () => ({
+//   transform: {
+//     experimentalImportSupport: true,
+//   },
+// })
 
 module.exports = config

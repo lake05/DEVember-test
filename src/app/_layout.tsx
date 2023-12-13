@@ -8,7 +8,7 @@ import {
 } from '@expo-google-fonts/inter'
 import { Stack } from 'expo-router'
 import { useEffect, useState } from 'react'
-// import { Platform } from 'react-native'
+import { Platform } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import Animated, { FadeIn } from 'react-native-reanimated'
 
@@ -35,7 +35,7 @@ const RootLayout = () => {
 
   const showAnimationSplash = !appReady || !splashAnimationFinished
 
-  if (showAnimationSplash) {
+  if (showAnimationSplash && Platform.OS !== 'web') {
     return (
       <AnimationSplashScreen
         onAnimationFinish={() => {

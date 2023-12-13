@@ -6,7 +6,7 @@ const DayDetailsScreen = () => {
   return (
     <View>
       <Stack.Screen options={{ title: 'Day 2' }} />
-      <Text style={{ fontFamily: 'AmaticBold' }}>DayDetailsScreen</Text>
+      <Text style={{ fontFamily: 'AmaticBold' }}>Tinder </Text>
       <Link href="/day6/tinder" asChild>
         <Text style={styles.buttonText}>CONTINUE</Text>
       </Link>
