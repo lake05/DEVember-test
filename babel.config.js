@@ -1,7 +1,24 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
+  const disableImportExportTransform = true
   return {
-    presets: ["babel-preset-expo"],
-    plugins: ["expo-router/babel"],
-  };
-};
+    presets: [
+      [
+        'babel-preset-expo',
+        {
+          native: {
+            disableImportExportTransform,
+          },
+          web: {
+            disableImportExportTransform,
+          },
+        },
+      ],
+    ],
+    plugins: [
+      'expo-router/babel',
+      '@babel/plugin-proposal-export-namespace-from',
+      'react-native-reanimated/plugin',
+    ],
+  }
+}

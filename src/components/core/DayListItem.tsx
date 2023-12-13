@@ -1,8 +1,8 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Link } from 'expo-router'
+import { Pressable, StyleSheet, Text } from 'react-native'
 
 interface DayListItemProps {
-  day: number;
+  day: number
 }
 
 export default function DayListItem({ day }: DayListItemProps) {
@@ -12,26 +12,24 @@ export default function DayListItem({ day }: DayListItemProps) {
         <Text style={styles.text}>{day}</Text>
       </Pressable>
     </Link>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   box: {
-    backgroundColor: "#f9ede3",
+    backgroundColor: '#f9ede3',
     flex: 1,
     aspectRatio: 1,
-
-    borderColor: "#9b4521",
+    borderColor: '#9b4521',
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: 20,
-
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   text: {
-    color: "#9b4521",
+    color: '#9b4521',
     fontSize: 50,
-    fontFamily: "AmaticBold",
+    fontFamily: 'AmaticBold',
   },
-});
+})

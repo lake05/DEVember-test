@@ -1,9 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { FlatList, StyleSheet, View } from "react-native";
+import { StatusBar } from 'expo-status-bar'
+import { FlatList, StyleSheet, View } from 'react-native'
 
-import DayListItem from "../components/core/DayListItem";
+import DayListItem from '@/components/core/DayListItem'
 
-const days = [...Array(24)].map((_, index) => index + 1);
+const days = [...Array(24)].map((_, index) => index + 1)
 
 export default function HomeScreen() {
   return (
@@ -18,13 +18,13 @@ export default function HomeScreen() {
 
       <StatusBar style="auto" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
 
   content: {
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   column: {
     gap: 10,
   },
-});
+})

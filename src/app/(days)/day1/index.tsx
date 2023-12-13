@@ -12,5 +12,3 @@ const DayDetailsScreen = () => {
 };
 
 export default DayDetailsScreen;
-
-const styles = StyleSheet.create({});

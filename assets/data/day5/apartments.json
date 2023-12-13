@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "price": "$150",
+    "title": "Cozy Studio in Downtown SF",
+    "numberOfStars": 4,
+    "rating": 8.5,
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "2",
+    "latitude": 37.7833,
+    "longitude": -122.4167,
+    "price": "$200",
+    "title": "Spacious Apartment near Golden Gate Bridge",
+    "numberOfStars": 5,
+    "rating": 9.2,
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "3",
+    "latitude": 37.7955,
+    "longitude": -122.3933,
+    "price": "$180",
+    "title": "Luxury Penthouse with Stunning City Views",
+    "numberOfStars": 4,
+    "rating": 8.8,
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "4",
+    "latitude": 37.7889,
+    "longitude": -122.4056,
+    "price": "$120",
+    "title": "Modern Loft in SoMa District",
+    "numberOfStars": 3,
+    "rating": 7.6,
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "5",
+    "latitude": 37.7919,
+    "longitude": -122.4017,
+    "price": "$250",
+    "title": "Charming Victorian House near Alamo Square",
+    "numberOfStars": 5,
+    "rating": 9.8,
+    "image": "https://via.placeholder.com/300"
+  }
+]
