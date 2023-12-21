@@ -11,8 +11,12 @@ import { useEffect, useState } from 'react'
 import { Platform } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import Animated, { FadeIn } from 'react-native-reanimated'
-
 import AnimationSplashScreen from '@/components/day4/AnimationSplashScreen'
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+
+const queryClient = new QueryClient()
 
 const RootLayout = () => {
   const [appReady, setAppReady] = useState(false)
@@ -46,19 +50,22 @@ const RootLayout = () => {
   }
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <Animated.View style={{ flex: 1 }} entering={FadeIn}>
-        <Stack
-          screenOptions={{
-            headerStyle: {
-              backgroundColor: '#F9EDE3',
-            },
-            headerTitleAlign: 'center',
-          }}>
-          <Stack.Screen name="index" options={{ title: 'DEVember' }} />
-        </Stack>
-      </Animated.View>
-    </GestureHandlerRootView>
+    <QueryClientProvider client={queryClient}>
+      {Platform.OS === 'web' && <ReactQueryDevtools initialIsOpen={false} />}
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <Animated.View style={{ flex: 1 }} entering={FadeIn}>
+          <Stack
+            screenOptions={{
+              headerStyle: {
+                backgroundColor: '#F9EDE3',
+              },
+              headerTitleAlign: 'center',
+            }}>
+            <Stack.Screen name="index" options={{ title: 'DEVember' }} />
+          </Stack>
+        </Animated.View>
+      </GestureHandlerRootView>
+    </QueryClientProvider>
   )
 }
 

@@ -6,8 +6,6 @@ import Markdown from 'react-native-markdown-display'
 const MarkdownDisplay = ({ children }: PropsWithChildren) => {
   return (
     <ScrollView style={styles.page} contentInsetAdjustmentBehavior="automatic">
-      <Stack.Screen options={{ title: 'Editor' }} />
-
       {/* @ts-ignore */}
       <Markdown style={markdownStyles}>{children}</Markdown>
       <Text>MarkdownDisplay</Text>
